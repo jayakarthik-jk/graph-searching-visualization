@@ -1,4 +1,4 @@
-# Tree Searching Visualization
+# Graph Serching Visualization
 
 # Algorithms
 
@@ -7,4 +7,4 @@
 
 Implemented using plain html, css and vanilla js
 
-Site deployed in - https://jayakarthik-jk.github.io/sorting-visualization/
+Site deployed in - https://jayakarthik-jk.github.io/graph-searching-visualization
