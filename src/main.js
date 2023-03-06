@@ -101,7 +101,7 @@ function init() {
   }
 
   nodes.forEach((node, index) => {
-    node.addEventListener("click", () => {
+    node.addEventListener("click", async () => {
       if (node.classList.contains("wall")) return;
       node.classList.toggle("active");
       if (startNode === null) {
@@ -112,8 +112,12 @@ function init() {
           node.classList.remove("start");
           startNode = null;
         } else {
+          algorithmBtn.setAttribute("disabled", "true");
+          shuffleBtn.setAttribute("disabled", "true");
           animate(node, targetColor);
-          sort(startNode, node.value);
+          await sort(startNode, node.value);
+          algorithmBtn.removeAttribute("disabled");
+          shuffleBtn.removeAttribute("disabled");
         }
       }
     });
