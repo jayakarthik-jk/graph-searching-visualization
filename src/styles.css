@@ -1,0 +1,148 @@
+:root {
+  --primary: #5adbb5;
+  --primary-hover: #78f1cd;
+  --secondary: #ab46d2;
+  --backgound: #1c1c1c;
+}
+
+* {
+  font-family: "Tilt Warp", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.title {
+  color: var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: bolder;
+  font-size: xx-large;
+}
+
+#mv-title {
+  display: none;
+}
+
+.nav {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 1;
+  font-weight: bolder;
+  font-size: xx-large;
+}
+
+.container {
+  background-color: var(--backgound);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-height: 100svh;
+  padding: 0 10px;
+}
+
+.grid {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  width: fit-content;
+  gap: 2px;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100px;
+  padding: 15px 75px 0 75px;
+}
+
+.btn {
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--primary);
+  border-bottom: 2px solid gray;
+  transform: scale(115%);
+  height: fit-content;
+}
+
+.btn:active {
+  transform: scale(100%);
+}
+
+.btn:disabled {
+  opacity: 0.8;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: var(--primary-hover);
+}
+
+.node {
+  background-color: var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.wall {
+  background-color: black !important;
+}
+
+.start {
+  background-color: var(--secondary);
+}
+
+.node:active {
+  transform: scale(0.9);
+}
+
+*:focus {
+  outline: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    flex-direction: column;
+  }
+  #mv-title {
+    color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bolder;
+    font-size: xx-large;
+    padding: 15px 0px;
+  }
+  .title {
+    display: none;
+  }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Graph Sorting Visualization</title>
+    <link rel="stylesheet" href="./src/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="./src/main.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/dc25f1cdbd.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="nav">
+        <a
+          href="https://github.com/jayakarthik-jk/graph-searching-visualization"
+        >
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+    </div>
+    <div id="container" class="container">
+      <div id="mv-title">Graph Serching Visualization</div>
+      <div class="grid" id="grid"></div>
+      <div class="controls">
+        <div class="title">Graph Serching Visualization</div>
+        <div class="btn-group">
+          <button class="btn shuffle-btn" id="shuffle-btn">
+            shuffle<i class="fa-solid fa-shuffle"></i>
+          </button>
+          <button class="btn speed-btn" id="speed-btn" data-speed="medium">
+            speed<i id="speed-btn-icon" class="fa-solid fa-car"></i>
+          </button>
+          <button class="btn sort-btn" id="volume-btn">
+            Sound<i class="fa-solid fa-volume-xmark" id="volume-btn-icon"></i>
+          </button>
+          <button
+            class="btn algorithm-btn"
+            id="algorithm-btn"
+            data-algorithm="bfs"
+          >
+            BFS
+            <i class="fa-solid fa-search" id="volume-btn-icon"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
